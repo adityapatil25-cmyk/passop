@@ -1,4 +1,4 @@
-import gitHubIcon from "../Icons/github.png";
+/*import gitHubIcon from "../Icons/github.png";
 const Navbar = () =>{
     return(
         <nav className="bg-slate-800 text-white">
@@ -14,7 +14,7 @@ const Navbar = () =>{
                     <a className="hover:font-bold" href='#'>Contact</a>
 
                 </li>
-              </ul>*/}
+              </ul>
               <button className="text-white bg-green-700 my-5 mx-2 rounded-full flex justify-between items-center">
                 <img className='invert w-10 p-1' src={gitHubIcon} alt="github logo" />
                 <span className="font-bold px-2">Github</span>
@@ -23,5 +23,33 @@ const Navbar = () =>{
         </nav>
     )
 }
+
+export default Navbar;
+*/
+
+import gitHubIcon from "../Icons/github.png";
+
+const Navbar = () => {
+    return (
+        <nav className="bg-slate-800 text-white w-full">
+            <div className="mycontainer flex flex-wrap md:flex-nowrap justify-between items-center px-4 py-4">
+                <div className="logo font-bold text-white text-2xl">
+                    <span className="text-green-500">&lt;</span>
+                    Pass<span className="text-green-500">OP/&gt;</span>
+                </div>
+
+                <a
+                    href="https://github.com/adityapatil25-cmyk/passop"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-3 md:mt-0 text-white bg-green-700 rounded-full flex justify-between items-center hover:bg-green-600"
+                >
+                    <img className="invert w-10 p-1" src={gitHubIcon} alt="github logo" />
+                    <span className="font-bold px-2">Github</span>
+                </a>
+            </div>
+        </nav>
+    );
+};
 
 export default Navbar;

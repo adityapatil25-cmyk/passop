@@ -7,4 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: '/passop/', // 👈 Must match your GitHub repo name
 })
